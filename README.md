@@ -16,12 +16,18 @@ This Python script automatically updates a predefined Oracle Cloud Infrastructur
 - OCI config file at `~/.oci/config` with appropriate permissions.
 - OCI Python SDK installed.
 
+## Setup
+
+1. Update `NETWORK_ADDRESS_LIST_OCID` in `WafTest.py` with your actual Network Address List OCID.
+2. Update `compartment_ocid` in `main` with your actual compartment OCID.
+
 ## Usage
 
 1. Clone the repository.
-2. Ensure your OCI setup is correct.
-3. Run the script: `python WafTest.py`
-4. The hardcoded Network Address List will be updated with fresh blacklisted IPs.
+2. Update the OCID values as mentioned in Setup.
+3. Ensure your OCI setup is correct.
+4. Run the script: `python WafTest.py`
+5. The specified Network Address List will be updated with fresh blacklisted IPs.
 
 ## Configuration
 

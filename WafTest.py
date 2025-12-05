@@ -6,7 +6,8 @@ import sys
 
 from oci.waf.models import UpdateNetworkAddressListAddressesDetails
 
-NETWORK_ADDRESS_LIST_OCID = "ocid1.webappfirewallnetworkaddresslist.oc1.iad.amaaaaaa2j5jslyalmryayb6hfbk6em2wkia7bts5iydnaceutjvell2ckkq"
+# TODO: Replace with your actual Network Address List OCID
+NETWORK_ADDRESS_LIST_OCID = "ocid1.webappfirewallnetworkaddresslist.oc1.iad.amaaaaaaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 def get_blacklisted_ips(compartment_ocid: str, min_confidence: int = 50, max_limit: int = 1000) -> list[str]:
@@ -85,7 +86,8 @@ def update_network_address_list(ips: list[str]) -> object:
 
 
 if __name__ == "__main__":
-    compartment_ocid = "ocid1.compartment.oc1..aaaaaaaatyqrz5n2tdxc554iktvqwwtnoe5ck4gvaxpf6hjcvg6g7k3g3opq"
+    # TODO: Replace with your actual compartment OCID
+    compartment_ocid = "ocid1.compartment.oc1..aaaaaaaaaaaaaaaaaaaaaaaXXXXXXXXXXXXXXXXXXXX"
 
     try:
         print("Getting blacklisted IPs from Threat Intelligence...")
